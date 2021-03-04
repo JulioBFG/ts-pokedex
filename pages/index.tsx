@@ -1,10 +1,10 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+import { Layout, PokemonCard } from '../src/components'
 
 export default function Home() {
-  return <Title>My page</Title>
-}
+  return  (
+    <>
+      <PokemonCard />
+      <PokemonCard />
+    </>
+  )
+};
