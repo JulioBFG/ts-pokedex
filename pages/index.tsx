@@ -2,9 +2,8 @@ import { Layout, PokemonCard } from '../src/components'
 
 export default function Home() {
   return  (
-    <>
-      <PokemonCard />
-      <PokemonCard />
-    </>
+    <Layout>
+      <PokemonCard name="Farfetch" />
+    </Layout>
   )
 };
