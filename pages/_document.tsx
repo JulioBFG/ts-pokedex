@@ -16,6 +16,7 @@ export default class MyDocument extends Document {
             #__next {
               height: 100%;
               display: flex;
+              margin: 0px;
             }
             body {
               margin: 0px;

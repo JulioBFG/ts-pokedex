@@ -7,6 +7,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "lint-staged": "^10.5.4",
     "next": "latest",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
