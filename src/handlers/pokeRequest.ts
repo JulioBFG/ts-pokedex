@@ -13,7 +13,11 @@ const getPokemon = async (id: number) => {
 export const fetchSinglePokemonData = async (pokemon: number) =>  await getPokemon(pokemon);
 
 export const fetchMultiplePokemonData = (pokeNumberToSearch: number) => {
-  const pokemonsData:any = [];
+  const pokemonsData:Array<{
+    name: string;
+    types: Array<{slot: number; type: object;}>
+    image: string;
+  }> = [];
   for (let search = 1; search <= pokeNumberToSearch; search++) {
     const returnedSinglePokeData = getPokemon(search);
     pokemonsData.push(returnedSinglePokeData);
