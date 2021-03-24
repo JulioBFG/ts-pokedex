@@ -4,12 +4,9 @@ import { fetchMultiplePokemonData }  from '../src/handlers/pokeRequest';
 
 export default function Home() {
   const [screenData, setScreenData] = useState<any>([]);
-  useEffect(() =>{
+  useEffect(() => {
     const returnedPokemonData = fetchMultiplePokemonData(10);
-    Promise.all(returnedPokemonData).then((values) => screenData.push(values));
-    const dataToShow = screenData.map((key:number, values:any) => {
-      console.log(values);
-    })
+    Promise.all(returnedPokemonData).then((values) => setScreenData(values));
   },[])
   return (
     <Layout>
