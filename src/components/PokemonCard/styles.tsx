@@ -14,6 +14,9 @@ export const Card = styled.div`
 `;
 
 export const PokemonAvatar = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px auto;
   border-radius: 100px;
   width: 150px;
