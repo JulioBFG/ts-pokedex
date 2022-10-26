@@ -1,10 +1,7 @@
 import React,{ FC, ReactElement } from 'react';
-import {  ContentWrapper, } from './styles';
 
-const Layout :FC<{children: ReactElement }> = ({ children }) => (
-  <ContentWrapper>
+export const Layout :FC<{children: ReactElement }> = ({ children }) => (
+  <div className='flex space-x-2 p-2'>
     {children}
-  </ContentWrapper>
+  </div>
 );
-
-export default Layout;
